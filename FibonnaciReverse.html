@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Fibonnaci reverse</h1>
+<p>Esto es una cadena Fibonnaci de 30.</p>
+
+<script>
+var i;
+var fib = [];
+
+fib[0] = 0;
+fib[1] = 1;
+//array que guarda los valores de la cadena fibonacci
+for(i=2; i<=29; i++)
+{
+    fib[i] = fib[i-2] + fib[i-1];
+}
+//bucle que muestra el número de la cadena guardado en cada valor del array
+for(i=29; i>=0; i--)
+{
+    alert(fib[i]);
+	i--;
+}
+
+
+</script>
+
+</body>
+</html>
